@@ -39,6 +39,7 @@ function parkTypeDropdown() {
     }
 }
 function informationCardMaker(park) {
+    
     let cardLocationContainer = document.getElementById("cardLocationContainer");
 
     let card = document.createElement("div");
@@ -64,11 +65,15 @@ function informationCardMaker(park) {
     text2.innerText = nationalParksArray[park].City + ", " + nationalParksArray[park].State + " " + nationalParksArray[park].ZipCode;
     cardBody.appendChild(text2);
 
-    let buttonSelectLocation = document.createElement("a")
-    buttonSelectLocation.className = "btn btn-dark ";
-    buttonSelectLocation.innerHTML = "Visit Us"
-    buttonSelectLocation.href = nationalParksArray[park].Visit;
-    cardBody.appendChild(buttonSelectLocation);
+    if (nationalParksArray[park].Visit != undefined) {
+        let buttonSelectLocation = document.createElement("a")
+        buttonSelectLocation.className = "btn btn-dark ";
+        buttonSelectLocation.innerHTML = "Visit Us"
+        buttonSelectLocation.href = nationalParksArray[park].Visit;
+        buttonSelectLocation.target = "_blank";
+        cardBody.appendChild(buttonSelectLocation);
+    }
+
 
 }
 function searchByLocationOnClick() {
@@ -89,5 +94,8 @@ function parkTypeListBtnOnClick() {
         }
     }
 }
+
+
+
 
 
