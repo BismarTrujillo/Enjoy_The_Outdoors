@@ -39,6 +39,18 @@
     font-size: x-large;
     text-shadow: 3px 3px 20px black;
 }
+#parkFinderLink, #montainInfoFinderLink {
+    font-family: 'DirtyFont', sans-serif;
+    font-size: xxx-large;
+    text-shadow: 3px 3px 20px black;
+    color: white; 
+    display: inline-block;
+    transition: transform .3s;  
+}
+#parkFinderLink:hover, #montainInfoFinderLink:hover{
+    transform: scale(1.3);
+}
+
 
 h1 {
     font-family: 'DirtyFont', sans-serif;

@@ -6858,4 +6858,3 @@ const nationalParksArray = [
         }
     }
 ]
-console.log(nationalParksArray[2].Visit)

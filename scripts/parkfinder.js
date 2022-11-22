@@ -70,7 +70,7 @@ function informationCardMaker(park) {
         buttonSelectLocation.className = "btn btn-dark ";
         buttonSelectLocation.innerHTML = "Visit Us"
         buttonSelectLocation.href = nationalParksArray[park].Visit;
-        buttonSelectLocation.target = "_blank";
+        buttonSelectLocation.target = "_blank"
         cardBody.appendChild(buttonSelectLocation);
     }
 
