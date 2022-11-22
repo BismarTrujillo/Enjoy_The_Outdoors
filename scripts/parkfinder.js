@@ -13,7 +13,6 @@ function init() {
     searchByLocationOnClick();
     parkTypeListBtnOnClick();
 }
-
 function locationDropdown() {
     const searchByLocation = document.getElementById("searchByLocationList");
     let blankOption = document.createElement("option");
@@ -94,8 +93,3 @@ function parkTypeListBtnOnClick() {
         }
     }
 }
-
-
-
-
-
