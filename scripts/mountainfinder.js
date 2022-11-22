@@ -12,7 +12,7 @@ function informationCardMaker(mountain) {
     let cardLocationContainer = document.getElementById("cardLocationContainer");
 
     let card = document.createElement("div");
-    card.className = "card col-md-8 col-lg-8 m-5";
+    card.className = "card col-md-8 col-lg-8 m-5 pb-2";
     card.style.width = "800px";
     cardLocationContainer.appendChild(card);
 
